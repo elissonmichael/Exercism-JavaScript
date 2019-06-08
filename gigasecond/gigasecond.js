@@ -1,7 +1,2 @@
-'use strict';
-const GIGASECOND = 1000000000;
-
-export function gigasecond(date) {
-  date.setSeconds(date.getSeconds() + GIGASECOND);
-  return date;
-}
+const GIGAMILLISECOND = 1000000000000;
+export const gigasecond = (date) => new Date(date.getTime() + GIGAMILLISECOND)
